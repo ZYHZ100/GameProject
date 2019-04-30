@@ -1,0 +1,11 @@
+.DS_Store
+*.xcworkspace
+.vs/
+Binaries/
+Build/
+/Content/
+/Intermediate/
+/Saved/
+
+
+
