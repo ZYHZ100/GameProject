@@ -22,5 +22,13 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+protected:
+	UPROPERTY(Category = "Projectile", BlueprintReadWrite)
+		FString projectile_kind;//×Óµ¯»ò±¬Õ¨Îï
+	UPROPERTY(Category = "Projectile", BlueprintReadWrite)
+		int32 attack_point;
+	UPROPERTY(Category = "Projectile", BlueprintReadWrite)
+		FString attack_kind;
+	UPROPERTY(Category = "Projectile", BlueprintReadWrite)
+		float expolde_range;//±¬Õ¨·¶Î§
 };

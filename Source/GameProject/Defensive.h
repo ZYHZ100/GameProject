@@ -25,5 +25,17 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+protected:
+	UPROPERTY(Category = "Defensive", BlueprintReadWrite)
+		bool attackable;
+	UPROPERTY(Category = "Defensive", BlueprintReadWrite)
+		FString defensive_type;//Trap or Turret
+	UPROPERTY(Category = "Defensive", BlueprintReadWrite)
+		int32 attack_point;
+	UPROPERTY(Category = "Defensive", BlueprintReadWrite)
+		FString attack_kind;
+	UPROPERTY(Category = "Defensive", BlueprintReadWrite)
+		float attack_speed;//¹¥»÷ËÙ¶È£¬ÓÃ¹¥»÷¼ä¸ô±íÊ¾£¬µ¥Î»s
+	UPROPERTY(Category = "Defensive", BlueprintReadWrite)
+		float range;//¹¥»÷¾àÀë
 };

@@ -23,6 +23,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-		
+protected:
+	UPROPERTY(Category = "Buff", BlueprintReadWrite)
+		FString buff_kind;
+	UPROPERTY(Category = "Buff", BlueprintReadWrite)
+		float buff_range;
 };

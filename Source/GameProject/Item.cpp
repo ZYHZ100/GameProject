@@ -24,3 +24,10 @@ void AItem::Tick(float DeltaTime)
 
 }
 
+void AItem::set_item(int32 item_id_in, FString item_name_in, int32 amount_in)
+{
+	item_id = item_id_in;
+	item_name = item_name_in;
+	amount = amount_in;
+}
+

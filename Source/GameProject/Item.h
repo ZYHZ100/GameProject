@@ -22,5 +22,12 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	void set_item(int32 item_id_in, FString item_name_in, int32 amount_in);
+protected:
+	UPROPERTY(Category = "Item", BlueprintReadOnly)
+		int32 item_id;
+	UPROPERTY(Category = "Item", BlueprintReadOnly)
+		FString item_name;
+	UPROPERTY(Category = "Item", BlueprintReadWrite)
+		int32 amount;
 };

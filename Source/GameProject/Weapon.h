@@ -22,5 +22,11 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+protected:
+	UPROPERTY(Category = "Weapon", BlueprintReadWrite)
+		int32 attack_point;
+	UPROPERTY(Category = "Weapon", BlueprintReadWrite)
+		FString attack_kind;
+	UPROPERTY(Category = "Weapon", BlueprintReadWrite)
+		FString weapon_kind;//ranged or melee
 };
